@@ -1,4 +1,5 @@
 require 'rspec/expectations'
-puts 'in here'
-require 'mpowered_matchers/version'
-require 'mpowered_matchers/active_record/be_deleted'
+
+Dir[File.join("mpowered_matchers", "**/*.rb")].each do |f|
+  require f
+end
